@@ -20,10 +20,10 @@
 	<body ontouchstart="">
 		<script type="module">
 
-			import * as THREE from 'https://tamon9921.github.io/test001/js/three.module.js';
-			import { APP } from 'https://tamon9921.github.io/test001/js/app.js';
-			import { VRButton } from 'https://tamon9921.github.io/test001/js/VRButton.js';
-			import { OrbitControls } from 'https://tamon9921.github.io/test001/js/OrbitControls.js';
+			import * as THREE from './js/three.module.js';
+			import { APP } from './js/app.js';
+			import { VRButton } from './js/VRButton.js';
+			import { OrbitControls } from './js/OrbitControls.js';
 			window.OrbitControls = OrbitControls;
 
 			window.THREE = THREE; // Used by APP Scripts.
@@ -46,13 +46,6 @@
 				} );
 
 			} );
-
-			let button = document.createElement( 'a' );
-			button.href = 'https://threejs.org/editor/#file=' + location.href.split( '/' ).slice( 0, - 1 ).join( '/' ) + '/app.json';
-			button.style.cssText = 'position: absolute; bottom: 20px; right: 20px; padding: 10px 16px; color: #fff; border: 1px solid #fff; border-radius: 20px; text-decoration: none;';
-			button.target = '_blank';
-			button.textContent = 'EDIT';
-			document.body.appendChild( button );
 
 		</script>
 	</body>
